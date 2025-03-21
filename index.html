@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Дрифт у хаосі</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="neon-light neon-light-1"></div>
+        <div class="neon-light neon-light-2"></div>
+    </div>
+
+    <div id="loginForm">
+        <h2>ДРИФТ У ХАОСІ</h2>
+        <input type="text" id="username" placeholder="Введіть ім'я">
+        <button onclick="registerUser()">ПОЧАТИ ГРУ</button>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="score">Очки: 0</div>
+        <button id="endBtn" onclick="endGame()">Завершити гру</button>
+    </div>
+
+    <div id="results" style="display: none;">
+        <h2>Результати</h2>
+        <p id="currentScore"></p>
+        <p id="bestScore"></p>
+        <button onclick="restartGame()">Грати ще</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
